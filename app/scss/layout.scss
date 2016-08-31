@@ -1,0 +1,11 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #305166;
+
+html, body {
+  font: 100% $font-stack;
+  color: $primary-color;
+padding: 0;
+	margin: 0 auto;
+}
+
+.container{width:65%;height: auto;}
