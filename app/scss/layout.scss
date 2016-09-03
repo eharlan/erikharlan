@@ -1,11 +1,14 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #305166;
-
 html, body {
-  font: 100% $font-stack;
-  color: $primary-color;
-padding: 0;
-	margin: 0 auto;
-}
+  font: 100% Helvetica, sans-serif;
+  background-color: #305166;
+  padding: 0;
+  margin: 0 auto;
+  color: aliceblue;}
 
-.container{width:65%;height: auto;}
+h1{margin: .5em}
+
+.container {
+  width: 65%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;}
