@@ -1,32 +1,38 @@
 html, body {
   font: 100% Helvetica, sans-serif;
   background-color: #305166;
-  padding: 0;
+  padding: 1em;
   margin: 0 auto;
   color: white;
   width:100%;
   height: 100%;
-
+  display: table;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#93c0e2+0,2989d8+36,305166+100 */
-  background: rgb(147,192,226); /* Old browsers */
+  background: rgb(48, 81, 102); /* Old browsers */
   background: -moz-linear-gradient(top, rgb(147,192,226) 0%, rgb(41,137,216) 36%, rgb(48,81,102) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgb(147,192,226) 0%,rgb(41,137,216) 36%,rgb(48,81,102) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgb(147,192,226) 0%,rgb(41,137,216) 36%,rgb(48,81,102) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93c0e2', endColorstr='#305166',GradientType=0 ); /* IE6-9 */
 }
 
-.banner{
-  position: absolute;
-    top: 0;
-    left: 0;
-    background:url('assets/images/checkers.png');
-    display: inline-block;
-    width:100%;
-    height:15em;
-    z-index:10;
-    opacity:.1;
+.navbox{
+  border-radius: 15px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border: 2px dashed #F5A720;
 
+margin: 1em;
+width: 30%;
+height: 15em;
+display: table;
+min-width: 200px;
 }
+
+.navbox .content{display: table-cell;vertical-align: middle;text-align: center;}
+
+.navbox:hover{background-color: #93c0e2;}
+
+.fa{font-size:5em;}
 
 h3{
   margin: 0;padding: .5em; line-height: 1.4em;
@@ -38,10 +44,14 @@ margin-right: auto;
 
 .container {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: table-row;
+}
 
+.wrap{
+margin-top: 10%;
 }
 
 .secsep{width: 100%;display: inline-block;border: .2em dotted white}
