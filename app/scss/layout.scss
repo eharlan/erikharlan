@@ -1,7 +1,7 @@
 html, body {
   font: 100% Helvetica, sans-serif;
   background-color: #305166;
-  padding: 1em;
+  padding: 0;
   margin: 0 auto;
   color: white;
   width:100%;
@@ -19,20 +19,33 @@ html, body {
   border-radius: 15px;
 -moz-border-radius: 15px;
 -webkit-border-radius: 15px;
-border: 2px dashed #F5A720;
+
 
 margin: 1em;
 width: 30%;
 height: 15em;
 display: table;
-min-width: 200px;
+min-width: 320px;
 }
 
 .navbox .content{display: table-cell;vertical-align: middle;text-align: center;}
 
-.navbox:hover{background-color: #93c0e2;}
+a .navbox{color: #fff;}
+.navbox:hover{
+  background-color: #93c0e2;
+  color: #F9CA79;
+  cursor: pointer;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
 
 .fa{font-size:5em;}
+
+.fa-user{position: relative;top:-20px;left:10px;}
+.fa-question-circle{position: relative;top:20px;left:-10px;}
 
 h3{
   margin: 0;padding: .5em; line-height: 1.4em;
@@ -45,9 +58,10 @@ margin-right: auto;
 .container {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
   display: table-row;
+
 }
 
 .wrap{
