@@ -73,7 +73,10 @@ gulp.task('compile-coffeejs', function() {
 
 
 gulp.task('build-js', function() {
-  return gulp.src('app/js/**/*.js')
+  return gulp.src(['app/js/vendor/jquery-3.2.0.js',
+  'app/js/vendor/bootstrap.js',
+  'app/js/vendor/system.js','app/js/vendor/config-typescript.js','aurelia-core.js','aurelia-routing.js',
+  'app/js/!(vendor)/**/*.js'])
     .pipe(sourcemaps.init())
       .pipe(concat('index.js'))
       //only uglify if gulp is ran with '--type production'
