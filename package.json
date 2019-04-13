@@ -13,14 +13,19 @@
   "author": "Erik Harlan",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
     "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.2"
   },
   "dependencies": {
+    "@babel/core": "^7.4.3",
     "browser-sync": "^2.14.3",
     "graceful-fs": "^4.1.6",
     "gulp-clean-css": "^2.0.12",

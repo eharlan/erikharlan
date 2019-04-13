@@ -9,6 +9,6 @@ export class App {
       {route: 'contact', name: 'contact', moduleId: 'contact/contact', title: 'Contact'},
 	  {route: 'about', name: 'about', moduleId: 'about/about',  title: 'About'}
     ]);
-    this.router = router;
+	this.router = () => this.router = router;
   }
 }

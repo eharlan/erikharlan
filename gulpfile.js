@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var babel = require('gulp-babel');
 
 var concat     = require('gulp-concat'),
     jshint     = require('gulp-jshint'),
@@ -73,11 +74,14 @@ gulp.task('compile-coffeejs', function() {
 
 
 gulp.task('build-js', function() {
-  return gulp.src(['app/js/vendor/jquery-3.2.0.js',
+
+  return gulp.src(['node_modules/babel-polyfill/dist/polyfill.js',
+  'app/js/vendor/jquery-3.2.0.js',
   'app/js/vendor/bootstrap.js',
   'app/js/vendor/system.js','app/js/vendor/config-typescript.js','aurelia-core.js','aurelia-routing.js',
   'app/js/!(vendor)/**/*.js'])
     .pipe(sourcemaps.init())
+	.pipe(babel({presets: ['es2015']}))
       .pipe(concat('index.js'))
       //only uglify if gulp is ran with '--type production'
       .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())
